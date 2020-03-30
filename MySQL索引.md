@@ -25,7 +25,7 @@
 + ***.frm**: 表结构信息
 + ***.ibd**:索引+数据
 
-![image-20200328203314519](/Users/xiaodp/Library/Application Support/typora-user-images/image-20200328203314519.png)
+![image-20200328203314519](./img/image-20200328203314519.png)
 
 Q：innodb表必须有主键，并且推荐使用整型的自增主键？
 
@@ -39,17 +39,17 @@ Q：为什么推荐使用整型主键？
 
 Q：为什么推荐使用自增主键？
 
-![image-20200328204838464](/Users/xiaodp/Library/Application Support/typora-user-images/image-20200328204838464.png)
+![image-20200328204838464](./img/image-20200328204838464.png)
 
 等值查询下hash索引的确非常快，但不能解决范围查找
 
 自增主键的B+树可以实现范围查找
 
-![image-20200328210346552](/Users/xiaodp/Library/Application Support/typora-user-images/image-20200328210346552.png)
+![image-20200328210346552](./img/image-20200328210346552.png)
 
-![image-20200328211826178](/Users/xiaodp/Library/Application Support/typora-user-images/image-20200328211826178.png)
+![image-20200328211826178](./img/image-20200328211826178.png)
 
 Explain工具：查看是否使用了索引
 
-![image-20200328212609921](/Users/xiaodp/Library/Application Support/typora-user-images/image-20200328212609921.png)
+![image-20200328212609921](./img/image-20200328212609921.png)
 
